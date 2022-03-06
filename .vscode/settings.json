@@ -1,0 +1,31 @@
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
+  },
+  "stylelint.validate": ["css", "javascriptreact"],
+  "css.validate": false,
+  "scss.validate": false,
+  "[markdown]": {
+    "editor.formatOnSave": false
+  },
+  "cSpell.words": [
+    "dpcm",
+    "feedly",
+    "frontmatter",
+    "helvetica",
+    "i",
+    "iframely",
+    "lpic",
+    "noopener",
+    "noreferrer",
+    "qiita",
+    "segoe",
+    "tmedia",
+    "twemoji",
+    "udemy",
+    "zenn"
+  ]
+}
