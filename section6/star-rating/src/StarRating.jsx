@@ -5,11 +5,11 @@ const Star = ({ selected = false, onSelect = (f) => f }) => (
   <FaStar color={selected ? "red" : "grey"} onClick={onSelect} />
 );
 
-export const StarRating = ({ totalStars = 5 }) => {
+export const StarRating = ({ style = {}, totalStars = 5, ...props }) => {
   const [selectedStars, setSelectedStars] = useState(2);
 
   return (
-    <>
+    <div style={{ padding: "5px", ...style }} {...props}>
       {[...Array(totalStars)].map((_, i) => (
         <Star
           key={i}
@@ -20,6 +20,6 @@ export const StarRating = ({ totalStars = 5 }) => {
       <p>
         {selectedStars} of {totalStars} stars
       </p>
-    </>
+    </div>
   );
 };

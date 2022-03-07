@@ -4,7 +4,7 @@ import { StarRating } from "./StarRating";
 
 ReactDOM.render(
   <React.StrictMode>
-    <StarRating />
+    <StarRating style={{ backgroundColor: "lightblue" }} />
   </React.StrictMode>,
   document.getElementById("root")
 );
