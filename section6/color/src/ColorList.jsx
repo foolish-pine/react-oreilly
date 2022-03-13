@@ -1,20 +1,14 @@
 import { Color } from "./Color.jsx";
+import { useColors } from "./ColorProvider";
 
-export const ColorList = ({
-  colors = [],
-  onRemoveColor = (f) => f,
-  onRateColor = (f) => f,
-}) => {
+export const ColorList = () => {
+  const { colors } = useColors();
+
   if (!colors.length) return <div>No Colors Listed.</div>;
   return (
     <div>
       {colors.map((color) => (
-        <Color
-          key={color.id}
-          {...color}
-          onRemove={onRemoveColor}
-          onRate={onRateColor}
-        />
+        <Color key={color.id} {...color} />
       ))}
     </div>
   );
